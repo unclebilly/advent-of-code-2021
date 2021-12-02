@@ -28,6 +28,6 @@ defmodule Day02.MixProject do
   end
 
   defp escript do
-    [main_module: Day02]
+    [main_module: Day02.CLI]
   end
 end

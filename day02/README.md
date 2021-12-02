@@ -1,21 +1,14 @@
 # Day02
 
-**TODO: Add description**
+## testing
 
-## Installation
+    mix test
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `day02` to your list of dependencies in `mix.exs`:
+## running
 
-```elixir
-def deps do
-  [
-    {:day02, "~> 0.1.0"}
-  ]
-end
-```
+Use the `part` switch to change which problem you want the answer to. If not provided, the default is step 1. 
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/day02](https://hexdocs.pm/day02).
+    ./day02 --part=1 input.txt
+
+    ./day02 --part=2 input.txt
 

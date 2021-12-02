@@ -1,21 +1,10 @@
-defmodule Day02 do
+defmodule Day02.Part1 do
   @moduledoc """
-  Documentation for `Day02`.
+  Documentation for `Day02.Part1`.
   """
 
   defmodule Position do
     defstruct vertical: 0, horizontal: 0
-  end
-
-  def main(args \\ []) do
-    args
-    |> parse_args()
-    |> calculate_position()
-    |> IO.puts()
-  end
-
-  defp parse_args(args) do
-    File.read!(Enum.at(args, 0, ""))
   end
 
   @doc """
@@ -23,7 +12,7 @@ defmodule Day02 do
 
   ## Examples
 
-      iex> Day02.calculate_position("")
+      iex> Day02.Part1.calculate_position("")
       0
 
       iex> input = "
@@ -34,7 +23,7 @@ defmodule Day02 do
       ...> down 8
       ...> forward 2
       ...> "
-      ...> Day02.calculate_position(input)
+      ...> Day02.Part1.calculate_position(input)
       150
 
   """

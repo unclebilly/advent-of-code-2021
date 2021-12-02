@@ -1,6 +1,6 @@
-defmodule Day02Test do
+defmodule Day02.Part1Test do
   use ExUnit.Case
-  doctest Day02
+  doctest Day02.Part1
 
   test "parses data" do
     expected = [
@@ -11,12 +11,12 @@ defmodule Day02Test do
       {:down, 8},
       {:forward, 2}
     ]
-    assert Day02.parse_data(testdata()) == expected
+    assert Day02.Part1.parse_data(testdata()) == expected
   end
 
   test "parses blank data" do
     expected = []
-    assert Day02.parse_data("") == expected
+    assert Day02.Part1.parse_data("") == expected
   end
 
   def testdata do
